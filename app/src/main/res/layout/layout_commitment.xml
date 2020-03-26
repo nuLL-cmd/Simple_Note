@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginTop="4dp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Compromisso:"
+            android:textColor="#7B1FA2"
+            android:textStyle="bold"
+            android:layout_margin="10dp"
+            android:id="@+id/lbl_title_commitment"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Data:"
+            android:layout_below="@id/lbl_title_commitment"
+            android:layout_alignStart="@id/lbl_title_commitment"
+            android:layout_marginStart="10dp"
+            android:textStyle="bold"
+            android:textColor="#1E88E5"
+            android:id="@+id/lbl_date_commitments"
+            android:layout_marginBottom="10dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Compromisso:"
+            android:textAlignment="textEnd"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@id/lbl_title_commitment"
+            android:textStyle="bold"
+            android:layout_margin="10dp"
+            android:id="@+id/txt_title_commitment"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Data:"
+            android:layout_alignParentEnd="true"
+            android:textAlignment="textEnd"
+            android:layout_toEndOf="@id/lbl_date_commitments"
+            android:layout_alignTop="@id/lbl_date_commitments"
+            android:layout_alignBottom="@id/lbl_date_commitments"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:textStyle="bold"
+            android:id="@+id/txt_date_commitment" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Novo compromisso"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textColor="#7B1FA2"/>
+
+        <com.beardedhen.androidbootstrap.BootstrapEditText
+            android:id="@+id/edt_title_commiment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:hint="Titulo"
+            android:paddingStart="10dp"
+            app:bootstrapSize="xl"
+            app:roundedCorners="true"
+            android:singleLine="true"
+            android:textColor="#7B1FA2" />
+
+        <com.beardedhen.androidbootstrap.BootstrapEditText
+            android:id="@+id/edt_desription_commitment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            app:bootstrapSize="xl"
+            app:roundedCorners="true"
+            android:hint="Descrição"
+            android:inputType="textMultiLine"
+            android:paddingStart="10dp"
+            android:textColor="#7B1FA2" />
+
+        <com.beardedhen.androidbootstrap.BootstrapEditText
+            android:id="@+id/edt_date_commitment"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:inputType="datetime"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_gravity="start"
+            android:hint="Data"
+            android:paddingStart="10dp"
+            android:singleLine="true"
+            app:bootstrapSize="xl"
+            app:roundedCorners="true"
+            android:textColor="#7B1FA2" />
+
+        <Button
+            android:id="@+id/btn_save_commitment"
+            android:layout_width="300dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/background_btn_login"
+            android:onClick="registerMethod"
+            android:text="Salvar"
+            android:textColor="@android:color/white"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

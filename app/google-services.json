@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "555839660941",
+    "firebase_url": "https://simple-note-d0653.firebaseio.com",
+    "project_id": "simple-note-d0653",
+    "storage_bucket": "simple-note-d0653.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:555839660941:android:5ee991598157895be413c4",
+        "android_client_info": {
+          "package_name": "com.example.simplenote"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "555839660941-5nptpbngo41lrpnjav98rppu679e920u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.simplenote",
+            "certificate_hash": "683cd02d7e7cbd94d219abd73a4addf2de0f362f"
+          }
+        },
+        {
+          "client_id": "555839660941-ur9b7rsr4b4ec3o6htpqco11n7eppau1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDUzfBCaQgAn-pfs8Cfi1xt9m8NclEiT0E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "555839660941-ur9b7rsr4b4ec3o6htpqco11n7eppau1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

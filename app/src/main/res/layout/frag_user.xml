@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+
+    <ImageButton
+        android:id="@+id/btn_active_pass_profile2"
+        android:layout_width="48dp"
+        android:layout_height="32dp"
+        android:layout_gravity="center"
+        android:background="@drawable/background_btn_send_email"
+        android:scaleType="fitCenter"
+        android:src="@drawable/edit_purpe_64"
+        app:layout_constraintBottom_toTopOf="@+id/card_profile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.39"
+        app:layout_constraintStart_toEndOf="@+id/img_profile_profile"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.90999997" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:cardElevation="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_profile_profile"
+        app:layout_constraintVertical_bias="0.24000001">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/edt_name_profile"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_margin="20sp"
+                android:background="@drawable/background_edit_register"
+                android:hint="Nome"
+                android:paddingStart="10dp"
+                android:singleLine="true"
+                android:text="Carregando..."
+                android:enabled="false"
+                android:textColor="#959494" />
+
+            <EditText
+                android:id="@+id/edt_email_profile"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/background_edit_register"
+                android:enabled="false"
+                android:hint="Email"
+                android:paddingStart="10dp"
+                android:singleLine="true"
+                android:textColor="#959494" />
+
+            <EditText
+                android:id="@+id/edt_user_profile"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/background_edit_register"
+                android:hint="Usuario"
+                android:enabled="false"
+                android:paddingStart="10dp"
+                android:singleLine="true"
+                android:textColor="#959494" />
+
+            <RadioGroup
+                android:id="@+id/radio_sex"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp">
+
+                <RadioButton
+                    android:id="@+id/rb_fem_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:enabled="false"
+                    android:isScrollContainer="false"
+                    android:text="Feminino" />
+
+                <RadioButton
+                    android:id="@+id/rb_masc_profile"
+                    android:enabled="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Masculino" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/edt_password_profile"
+                    android:layout_width="150dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/background_edit_register"
+                    android:enabled="false"
+                    android:hint="Senha"
+                    android:inputType="numberPassword"
+                    android:maxLength="6"
+                    android:paddingStart="10dp"
+                    android:singleLine="true" />
+
+                <ImageButton
+                    android:id="@+id/btn_active_pass_profile"
+                    android:layout_width="48dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/background_btn_send_email"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/edit_purpe_64" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_profile_profile"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:src="@drawable/user_contact"
+        app:civ_border_color="#8E24AA"
+        app:civ_border_width="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.048" />
+
+    <Button
+        android:id="@+id/btn_save_profile"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="56dp"
+        android:layout_marginEnd="55dp"
+        android:background="@drawable/background_btn_login"
+        android:text="Salvar"
+        android:enabled="false"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_profile"
+        app:layout_constraintVertical_bias="0.45" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

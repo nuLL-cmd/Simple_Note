@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginTop="10dp"
+    app:cardCornerRadius="2dp"
+    app:cardElevation="30dp"
+    app:backgroundTint="#781FA2"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:background="#7B1FA2"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_title_layout_recovery"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@android:color/white"
+            android:text="Insira um email válido \npara a recuperação da senha"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:hint="Email"
+            android:textCursorDrawable="@drawable/cursor_edt"
+            android:background="@drawable/background_edit"
+            android:layout_below="@id/txt_title_layout_recovery"
+            android:singleLine="true"
+            android:textColorHint="#ffffff"
+            android:id="@+id/edt_email_layout_recovery"
+            android:textColor="#ffffff"/>
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_send_layout_recovery"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/edt_email_layout_recovery"
+            android:text="Enviar"
+            android:layout_marginBottom="20dp"
+            android:textColor="@android:color/black"
+            android:background="@drawable/background_btn_send_email"/>
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
